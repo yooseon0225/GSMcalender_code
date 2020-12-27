@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     width: 7%;
-    /* 부모의 값을 기준으로 이동 (fixed는 고정) */
+    /* 부모의 값을 기준으로 이동 (fixed는 고정함) */
     position: absolute; 
     right: 25px;
     top: 3px;
