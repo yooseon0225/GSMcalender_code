@@ -19,35 +19,35 @@ header h1 {
   margin: 0;
 
 }
-#calendar {
+#calendar01 {
   width: 100%;
 }
-#calendar a {
-  text-decoration: none;
+#calendar01 a {
   color: #000000;
+  text-decoration: none;
 }
-#calendar ul {
+#calendar01 ul {
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
 }
-#calendar li {
+#calendar01 li {
   display: block;
   float: left;
   width: 14.342%;
   padding: 5px;
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  border: 2px solid #000000;
   margin-right: -1px;
   margin-bottom: -1px;
 }
-#calendar ul.weekdays {
+#calendar01 ul.weekdays {
   height: 40px;
   background: #ffffff;
 
 }
-#calendar ul.weekdays li {
+#calendar01 ul.weekdays li {
   text-align: center;
   text-transform: uppercase;
   line-height: 20px;
@@ -57,13 +57,13 @@ header h1 {
   font-size: 13px;
   font-family: 'Schoolbell', cursive;
 }
-#calendar .days li {
+#calendar01 .days li {
   height: 180px;
 }
-#calendar .days li:hover {
+#calendar01 .days li:hover {
   background: #d3d3d3;
 }
-#calendar .date {
+#calendar01 .date {
   text-align: center;
   margin-bottom: 5px;
   padding: 2px;
@@ -73,7 +73,7 @@ header h1 {
   float: left;
   font-family: 'Schoolbell', cursive;
 }
-#calendar .event {
+#calendar01 .event {
   clear: both;
   display: block;
   font-size: 13px;
@@ -87,12 +87,12 @@ header h1 {
   color: #009aaf;
   text-decoration: none;
 }
-#calendar .event-desc {
+#calendar01 .event-desc {
   color: #666;
   margin: 3px 0 7px 0;
   text-decoration: none;
 }
-#calendar .other-month {
+#calendar01 .other-month {
   background: #f5f5f5;
   color: #666;
 }
@@ -100,17 +100,17 @@ header h1 {
                 Mobile Responsiveness
    ============================*/
 @media (max-width: 768px) {
-  #calendar .weekdays, #calendar .other-month {
+  #calendar01 .weekdays, #calendar .other-month {
     display: none;
   }
-  #calendar li {
+  #calendar01 li {
     height: auto !important;
     border: 1px solid #ededed;
     width: 100%;
     padding: 10px;
     margin-bottom: -1px;
   }
-  #calendar .date {
+  #calendar01 .date {
     float: none;
   }
 }
