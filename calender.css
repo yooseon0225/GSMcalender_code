@@ -1,10 +1,10 @@
 
 header {
     text-align: center; /* 글자 가운데 정렬 */
-    background-color: #e5e5e5;
+    background-color: #d5dde9;
     width: 99.8%;
-    height: 130px;
-    border: 2px solid #000000;
+    height: 140px;
+    border: 2px solid #555A74;
 }
 
 header h1 ul {
@@ -13,7 +13,8 @@ header h1 ul {
     justify-content: space-between;
     margin: 0;
     font-family: 'Schoolbell', cursive;
-    font-size: 65px;
+    font-size: 70px;
+    color: #333649;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 600px;
     margin-left: auto;
@@ -64,7 +65,7 @@ header h1 ul {
 }
 
 #calender-date .day .date1 {
-    border: 2px solid #000000;
+    border: 2px solid #555A74;
     width: 100%;
     height: 120px;
     margin: 0;
@@ -73,4 +74,13 @@ header h1 ul {
     padding-top: 7px;
 }
 
+.date1:hover {
+
+    background-color: #e1e8f3;
+}
+
+.other-month {
+    color: #000000;
+    background-color: #f5f5f5;
+}
 

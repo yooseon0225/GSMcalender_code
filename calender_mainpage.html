@@ -8,23 +8,31 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap');
             </style>
     </head>
     <body>
         <header>
             <div class="signup">
                 <ul>
-                    <li>로그인</li>
-                    <li>회원가입</li>
+                    <li class="text"><a href="./calender_login.html">login</a></li>
+                    <li class="text"><a href="./calender_signup.html">signup</a></li>
                 </ul>
             </div>
             <div id="menu">
                 <ul>
-                    <li class="logo"><img src="./calender_logo.png" alt="로고"></li>
+                    <li class="logo"><a href="./calender_mainpage.html"><img src="./calender_logo.png" alt="로고"></a></li>
                     <li class="textmenu"><a href="http://gsm.gen.hs.kr/main/main.php">GSM page</a> </li>
                     <li class="textmenu"><a href="./calender.html">Calender</a></li>
-                    <li><img src="./user.png" alt="비로그인사용자"></li>
-                    <li class="textmenu">검색창</li>
+                    <li class="user"><img src="./user.png" alt="비로그인사용자"></li>
+                    <li class="textmenu">
+                        <form action="search">
+                            <button class="button-img" type="submit" name="click" value=""> <!-- 버튼을 클릭시 폼 데이터 제출 -->
+                                <i class="fa-search"></i>
+                            </button>
+                            <input class="keyword" type="text" name="search" maxlength="255" value="" autocomplete="off">
+                        </form>
+                    </li>
                 </ul>
             </div>
         </header>

@@ -2,7 +2,7 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 7%;
+    width: 8%;
     /* 부모의 값을 기준으로 이동 (fixed는 고정) */
     position: absolute; 
     right: 25px;
@@ -12,11 +12,27 @@
 .singup ul li {
     margin-left: 5px;
     padding-left: 5px;
+
+}
+.text {
     font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-#menu img{
+.text a:hover{
+    text-decoration: none;
+    color: #7e85a5;
+}
+
+
+.logo img{
     width: 135px;
+    height: 125px;
+}
+
+.user img {
+    width: 125px;
     height: 125px;
 }
 
@@ -24,22 +40,23 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 64%;
+    width: 68%;
 }
 #menu ul li{
     margin-top: 18px;
 }
 #menu .textmenu {
-    margin-top: 75px;
+    margin-top: 95px;
     font-family: 'Varela Round', sans-serif;
     font-size: 35px;
+    font-weight: bold;
 }
 
 a{
     text-decoration: none;
-    color: #000000;
+    color: #333649;
 }
 
 .textmenu a:hover{
-    color: #908D8D;
+    color: #7e85a5;
 }
