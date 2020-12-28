@@ -2,8 +2,13 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     width: 8%;
     /* 부모의 값을 기준으로 이동 (fixed는 고정) */
+=======
+    width: 7%;
+    /* 부모의 값을 기준으로 이동 (fixed는 고정함) */
+>>>>>>> 0fdf65933346284d40320a39ad94109ac7ab59fc
     position: absolute; 
     right: 25px;
     top: 3px;
@@ -58,5 +63,10 @@ a{
 }
 
 .textmenu a:hover{
+<<<<<<< HEAD
     color: #7e85a5;
 }
+=======
+    color: #908D8D;
+}
+>>>>>>> 0fdf65933346284d40320a39ad94109ac7ab59fc
