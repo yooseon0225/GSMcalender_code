@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calender login</title>
         <link rel="stylesheet" href="./calender_login.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+        </style>
     </head>
     <body>
         <header>
@@ -12,5 +16,16 @@
                 <a href="./calender_mainpage.html"><img src="./calender_logo.png" alt="로고"></a>
             </div>
         </header>
+        <div class="login-form-tag">
+            <form action="#" accept-charset="utf-8" name="person_info" method="get">
+                <fieldset class="login-field">
+                    <legend> 로그인 </legend> <!-- 그룹화된 폼의 이름 지정 -->
+                    <p class="id-font">ID :  <input class="login-input" type="text" name = "id" required/><br></p>
+                    <!-- required : 필수 태그로 지정되어 에러 메세지 나옴-->
+                    <p class="id-font2">PW : <input class="login-input" type="password" name="password" required/><br></p>                  
+                </fieldset> <!-- 관련있는 폼을 묶어줌 -->
+                <button class="login-button" name="start" type="submit">시작하기</button>
+            </form>
+        </div>
     </body>
 </html>

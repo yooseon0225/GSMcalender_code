@@ -9,6 +9,7 @@
             @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
             </style>
     </head>
     <body>
@@ -25,12 +26,15 @@
                     <li class="textmenu"><a href="http://gsm.gen.hs.kr/main/main.php">GSM page</a> </li>
                     <li class="textmenu"><a href="./calender.html">Calender</a></li>
                     <li class="user"><img src="./user.png" alt="비로그인사용자"></li>
-                    <li class="textmenu">
+                    <li class="textmenu textsearch">
                         <form action="search">
-                            <button class="button-img" type="submit" name="click" value=""> <!-- 버튼을 클릭시 폼 데이터 제출 -->
-                                <i class="fa-search"></i>
-                            </button>
-                            <input class="keyword" type="text" name="search" maxlength="255" value="" autocomplete="off">
+                            <ul>
+                                <li><input class="keyword" type="text" name="search" maxlength="255" value="" autocomplete="off"></li>
+                                <li><button class="button-img" type="submit" name="click" value=""><img src="./serch_icon.png" alt="검색아이콘"><!-- 버튼을 클릭시 폼 데이터 제출 -->
+                                    <i class="fa-search"></i> <!-- 글씨를 기울림 -->
+                                </button></li>
+                            </ul>
+                            
                         </form>
                     </li>
                 </ul>

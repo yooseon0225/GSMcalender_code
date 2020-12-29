@@ -2,13 +2,8 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
     width: 8%;
     /* 부모의 값을 기준으로 이동 (fixed는 고정) */
-=======
-    width: 7%;
-    /* 부모의 값을 기준으로 이동 (fixed는 고정함) */
->>>>>>> 0fdf65933346284d40320a39ad94109ac7ab59fc
     position: absolute; 
     right: 25px;
     top: 3px;
@@ -45,7 +40,7 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 68%;
+    width: 86%;
 }
 #menu ul li{
     margin-top: 18px;
@@ -59,14 +54,36 @@
 
 a{
     text-decoration: none;
-    color: #333649;
+    color: #3a3e58;
 }
 
 .textmenu a:hover{
-<<<<<<< HEAD
     color: #7e85a5;
 }
-=======
-    color: #908D8D;
+
+.textsearch {
+    margin-left: 15px;
 }
->>>>>>> 0fdf65933346284d40320a39ad94109ac7ab59fc
+
+
+.button-img {
+    margin-left: 15px;
+    background-color: #ffffff;
+    border: #FFFFFF;
+}
+
+.button-img img {
+    width: 46px;
+    height: 48px;
+    padding: 0;
+}
+
+.keyword {
+    width: 360px;
+    height: 48px;
+    border: 3px solid #464b6b;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Yeon Sung', cursive;
+    padding-left: 3%;
+}
