@@ -4,3 +4,6 @@
     width: 135px;
     height: 125px;
 }
+.signup legend {
+    text-align: center;
+}
