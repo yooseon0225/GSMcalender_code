@@ -123,6 +123,7 @@ a{
     font-family: 'Snippet', sans-serif;
     font-size: 20px;
     text-align: center;
+    font-weight: bold;
 }
 .small-day {
     display: flex;
@@ -142,11 +143,15 @@ a{
     margin-left: 5px;
     margin-bottom: 5px;
     padding: 3px;
-    padding-left: 3px;
+    padding-left: 5px;
+    font-family: 'Snippet', sans-serif;
+    font-weight: bold;
+    font-size:14px;
 }
 
 .small-date {
     width: 150px;
+    
 }
 
 .sun {
