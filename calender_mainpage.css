@@ -87,3 +87,80 @@ a{
     font-family: 'Yeon Sung', cursive;
     padding-left: 3%;
 }
+
+#small-calender h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 11px;
+    width: 89%;
+    height: 100px;
+    background-color: #D5DDE9;
+    font-size: 60px;
+    font-family: 'Schoolbell', cursive;
+    color: #464b6b;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid #464b6b;
+    margin-bottom: 5px;
+}
+
+.small-calender-date ul {
+    list-style: none;
+}
+
+.small-week {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.small-week li {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Snippet', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.small-day {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-day li {
+    border: 2px solid #464b6b;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 3px;
+    padding-left: 3px;
+}
+
+.small-date {
+    width: 150px;
+}
+
+.sun {
+    color: #DA5B5B;
+}
+
+.sat {
+    color: #415CB9;
+}
+
+.small-date:hover {
+    background-color: #e1e8f3;
+}
+.small-other {
+    color: #000000;
+    background-color: #f5f5f5;
+}

@@ -18,10 +18,11 @@
         </header>
         <div class="login-form-tag">
             <form action="#" accept-charset="utf-8" name="person_info" method="get">
+                <!-- action : 값을 보낼 주소, method - get : 폼데이터를 HTTP GET 메소드로 전송, pos : 폼 데이터를 HTTP POST 메소드로 전송 -->
                 <fieldset class="login-field">
                     <legend> 로그인 </legend> <!-- 그룹화된 폼의 이름 지정 -->
                     <p class="id-font">ID :  <input class="login-input" type="text" name = "id" required/><br></p>
-                    <!-- required : 필수 태그로 지정되어 에러 메세지 나옴-->
+                    <!-- required : 필수 태그로 지정되어 에러 메세지 나옴 -->
                     <p class="id-font2">PW : <input class="login-input" type="password" name="password" required/><br></p>                  
                 </fieldset> <!-- 관련있는 폼을 묶어줌 -->
                 <button class="login-button" name="start" type="submit">시작하기</button>
