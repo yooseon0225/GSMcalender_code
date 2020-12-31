@@ -4,6 +4,86 @@
     width: 135px;
     height: 125px;
 }
+
+.signup {
+    display: flex;
+    justify-content: center; /* 가로에서 가운데 배치 */   
+    align-items: center; /* 세로에서 가운데 배치  */
+    margin-top: 128px;
+}
+
+.signup-fieldset{
+    width: 370px;
+    border: 3px solid #555A74;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
 .signup legend {
+    font-size: 28px;
     text-align: center;
+    color: #555A74;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.signup-id-input {
+    width: 200px;
+    height: 42px;
+    background-color: #DBE2ED;
+    border-radius: 5px;
+    border: 2px solid #DBE2ED;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    padding-left: 2.5%;
+    margin: 2px;
+}
+
+.overlap-test {
+    margin-left: 15px;
+    background-color: #FFFFFF;
+    border: 2px solid #555A74;
+    border-radius: 5px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+    color: #555A74;
+}
+
+.signup-input {
+    width: 275px;
+    height: 42px;
+    background-color: #DBE2ED;
+    border-radius: 5px;
+    border: 2px solid #DBE2ED;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    padding-left: 2.5%;
+    margin: 2px;
+}
+
+.signup-fieldset p {
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
+    color: #555A74;
+    font-size: 20px;
+    margin-left: 3.5px;
+}
+.signup-button {
+    background-color: #FFFFFF;
+    border: 3px solid #555A74;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-left: 130px;
+    margin-top: 15px;
+    color: #555A74;
+}
+.next-login {
+    margin-top: 6px;
+    margin-left: 134px;
+}
+.next-login a{
+    text-decoration: none;
+    color: #a5a5a5;
+    font-size: 14.5px;
 }

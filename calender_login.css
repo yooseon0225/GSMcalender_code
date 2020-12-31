@@ -68,3 +68,14 @@
     margin-top: 15px;
     margin-left: 135px;
 }
+
+.next-signup {
+    margin-top: 6px;
+    margin-left: 153px;
+}
+
+.next-signup a{
+    text-decoration: none;
+    color: #a5a5a5;
+    font-size: 14.5px;
+}
