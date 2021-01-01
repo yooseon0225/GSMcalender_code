@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     
 </head>
 <body>
-    <div class="container">
-      <img id="img" src="./images/gc_img1.jpg" />
-      <button onclick="toggleImg()">toggle</button>
+    <div id="galleryCont">
+        <p><img src="./images/img01.jpg" id="photo" alt="이미지"></p>
+        <p>
+            <button onclick="changePic(0)">이전</button>
+            <button onclick="changePic(1);">다음</button>
+        </p>
     </div>
     <script>
-      function toggleImg() {
-        document.getElementById("img").src = "./images/gc_img2.jpg";
-      }
+        var num = 1;
+        function changePic(idx){
+            if (idx) {
+                if(num == 6) return;
+                num ++;
+            }else {
+                if (num == 1) return;
+                num--;
+            }
+            var imgTag = document.getElementById("photo");
+            imgTag.setAttribute("src", "images/img0"+num+".jpg");
+            
+            // imgTag.setAttribute("src", "images/img0" + num + ".jpg");
+            // photo.src = "images/img0" + num + ".jpg";
+        }
     </script>
   </body>
 </html>

@@ -3,94 +3,82 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calender login</title>
+        <title>Calender Signup</title>
         <link rel="stylesheet" href="./calender_signup.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
         </style>
-        <script type="text/javascript">
-            var num = 1;
-
-            function changeGcImg(idx){
-                // idx라는 매개변수를 활용하여 changeGcImg 함수를 생성
-                if(dix){
-                    if(num == 6) return;
-                    num++;
-                }
-                else{
-                    if(num == 1) return;
-                    num--;
-                }
-
-                var imgTag = document.getElementById("photo").src ="./images/gc_img"+num+".png";
-                
-            }
-        </script>
     </head>
-    <body>
-        <header>
-            <div class="logo">
-                <a href="./calender_mainpage.html"><img src="./calender_logo.png" alt="로고"></a>
-            </div>
-        </header>
-        <div class="signup">
-            <form action="#" accept-charset="utf-8" name="signupform" method="get">
-                <fieldset class="signup-fieldset">
-                    <legend>회원가입</legend>
-                    <p> ID : <input class="signup-id-input font" type="text" name="first-id" required/> <button class="overlap-test" name="id-test" type="submit">중복확인</button></p>
-                    <p>PW : <input class="signup-input font" type="password" name="first-password" required><br></p>
-                    <p>확인 : <input class="signup-input font" type="password" name="password-test" required><br></p>
-                    <p>이름 : <input class="signup-input font" type="text" name="user-name" required><br></p>
-                    <p>성별 : 남 <input type="radio" name="gender"> 여 <input type="radio" name="gender"><br></p>
-                    <p>학년
-                        <select name="grade" id="grade">
-                            <option value="1-grade">1</option>
-                            <option value="2-grade">2</option>
-                            <option value="3e-grade">3</option>
-                        </select>
-                        반
-                        <select name="class" id="class">
-                            <option value="1-class">1</option>
-                            <option value="2-class">2</option>
-                            <option value="3-class">3</option>
-                            <option value="4-class">4</option>
-                        </select>
-                        번호
-                        <select name="class-number" id="class-number">
-                            <option value="one">1</option>
-                            <option value="two">2</option>
-                            <option value="three">3</option>
-                            <option value="four">4</option>
-                            <option value="five">5</option>
-                            <option value="six">6</option>
-                            <option value="seven">7</option>
-                            <option value="eight">8</option>
-                            <option value="nine">9</option>
-                            <option value="ten">10</option>
-                            <option value="eleven">11</option>
-                            <option value="twelve">12</option>
-                            <option value="thirteen">13</option>
-                            <option value="fourteen">14</option>
-                            <option value="fifteen">15</option>
-                            <option value="sixteen">16</option>
-                            <option value="seventeen">17</option>
-                            <option value="eighteen">18</option>
-                            <option value="nineteen">19</option>
-                            <option value="twenty">20</option>
-                        </select>
+    <body>     
+        <a class="logo" href="./calender_mainpage.html"><img src="./calender_logo.png" alt="로고"></a>
+
+        <div id="all-calener-signup">
+            <div class="gc_img_set">
+                <div class="img_set">
+                    <p>
+                        <button onclick="changeGcImg(0)"><img src="./images/left.png" alt="이전"></button> 
+                        <!-- onclik : 버튼 클릭시 실행 -->
+                        <img class="gc_user_img" src="./images/img01.jpg" id="GcImg" alt="이미지">
+                        <button onclick="changeGcImg(1);"><img src="./images/right.png" alt="다음"></button>
                     </p>
-                </fieldset>
-                <button class="signup-button" name="first-start" type="submit">회원가입하기</button> 
-                <div class="next-login"><a href="./calender_login.html">계정이 이미 있어요</a></div>                
-            </form>
-            <div class="img_set">
-                <p><img src="images/gc_img1.png" id="photo" alt="캘린더 이미지"></p>
-                <p>
-                    <button onclick="changeGcImg(0);">이전</button>
-                    <button onclick="changeGcImg(1);">다음</button>
-                    <!-- <script type="text/javascript" src="signup_img.js"></script> -->
-                </p>
+                </div>
+                <script src="signup_img.js"></script>
+                <!-- html과 js 연결 -->
+            </div>
+            <div class="signup">
+                
+                <form action="#" accept-charset="utf-8" name="signupform" method="get">              
+                    <fieldset class="signup-fieldset">
+                        <legend>회원가입</legend>
+                        <p> ID : <input class="signup-id-input font" type="text" name="first-id" required/> <button class="overlap-test" name="id-test" type="submit">중복확인</button></p>
+                        <p>PW : <input class="signup-input font" type="password" name="first-password" required><br></p>
+                        <p>확인 : <input class="signup-input font" type="password" name="password-test" required><br></p>
+                        <p>이름 : <input class="signup-input font" type="text" name="user-name" required><br></p>
+                        <p>성별 : 남 <input type="radio" name="gender"> 여 <input type="radio" name="gender"><br></p>
+                        <p>학년
+                            <select name="grade" id="grade">
+                                <option value="1-grade">1</option>
+                                <option value="2-grade">2</option>
+                                <option value="3e-grade">3</option>
+                            </select>
+                            반
+                            <select name="class" id="class">
+                                <option value="1-class">1</option>
+                                <option value="2-class">2</option>
+                                <option value="3-class">3</option>
+                                <option value="4-class">4</option>
+                            </select>
+                            번호
+                            <select name="class-number" id="class-number">
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                                <option value="six">6</option>
+                                <option value="seven">7</option>
+                                <option value="eight">8</option>
+                                <option value="nine">9</option>
+                                <option value="ten">10</option>
+                                <option value="eleven">11</option>
+                                <option value="twelve">12</option>
+                                <option value="thirteen">13</option>
+                                <option value="fourteen">14</option>
+                                <option value="fifteen">15</option>
+                                <option value="sixteen">16</option>
+                                <option value="seventeen">17</option>
+                                <option value="eighteen">18</option>
+                                <option value="nineteen">19</option>
+                                <option value="twenty">20</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                    <button class="signup-button" name="first-start" type="submit">가입하기</button> 
+                    <div class="next-login"><a href="./calender_login.html">계정이 이미 있어요</a></div>                
+                </form>
+    
+                
             </div>
         </div>
     </body>
