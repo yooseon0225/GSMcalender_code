@@ -9,6 +9,24 @@
             @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
         </style>
+        <script type="text/javascript">
+            var num = 1;
+
+            function changeGcImg(idx){
+                // idx라는 매개변수를 활용하여 changeGcImg 함수를 생성
+                if(dix){
+                    if(num == 6) return;
+                    num++;
+                }
+                else{
+                    if(num == 1) return;
+                    num--;
+                }
+
+                var imgTag = document.getElementById("photo").src ="./images/gc_img"+num+".png";
+                
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -66,7 +84,14 @@
                 <button class="signup-button" name="first-start" type="submit">회원가입하기</button> 
                 <div class="next-login"><a href="./calender_login.html">계정이 이미 있어요</a></div>                
             </form>
-                    
+            <div class="img_set">
+                <p><img src="images/gc_img1.png" id="photo" alt="캘린더 이미지"></p>
+                <p>
+                    <button onclick="changeGcImg(0);">이전</button>
+                    <button onclick="changeGcImg(1);">다음</button>
+                    <!-- <script type="text/javascript" src="signup_img.js"></script> -->
+                </p>
+            </div>
         </div>
     </body>
 </html>
