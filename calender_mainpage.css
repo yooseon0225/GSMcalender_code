@@ -61,8 +61,15 @@ a{
     color: #7e85a5;
 }
 
+.user {
+    position: relative;
+    left: 12px;
+}
+
 .textsearch {
     margin-left: 15px;
+    position: relative;
+    bottom: 23px;
 }
 
 

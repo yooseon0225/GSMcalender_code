@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./edit_test.css">
+
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".menu>a").click(function(){
+            $(this).next("ul").toggleClass("hide");
+        });
+    });
+    </script>
+</head>
+<body>
+    <ul>
+        <li class="menu"> 
+            <a> <img src="calender_logo.png" alt="메뉴1"> </a>
+            <ul class="hide">
+                <li>추가하기</li>
+                <li>삭제하기</li>
+                <li>자세히 보기</li>
+            </ul>
+        </li>
+        <li class="menu">
+            <a><img src="./calender_logo.png" alt="메뉴2"></a>
+            <ul class="hide">
+                <li>매뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

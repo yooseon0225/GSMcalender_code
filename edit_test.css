@@ -1,0 +1,16 @@
+.menu a{
+    cursor: pointer;
+}
+.menu .hide {
+    display: none;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+ul {
+    list-style: none;
+}
+.hide {
+    float: right;
+}
