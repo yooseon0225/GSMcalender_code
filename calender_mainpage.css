@@ -85,14 +85,20 @@ a{
     padding: 0;
 }
 
+
+
 .keyword {
     width: 360px;
     height: 48px;
     border: 3px solid #464b6b;
     border-radius: 5px;
     font-size: 25px;
-    font-family: 'Yeon Sung', cursive;
+    font-family: 'Do Hyeon', sans-serif;
     padding-left: 3%;
+}
+
+.keyword::placeholder {
+    color: #b8b8b8;
 }
 
 #small-calender h1 {
