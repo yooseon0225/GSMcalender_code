@@ -24,7 +24,7 @@ header h1 ul {
 /* #calender-date {
     border: 2px solid #000000;
 } */
-#calender-date .week{
+#calender-date2 .week2{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -33,7 +33,7 @@ header h1 ul {
     padding: 0;
 
 }
-.week li{
+.week2 li{
     list-style: none;
     text-transform: uppercase; /* 소문자 -> 대문자 */
     font-family: 'Snippet', sans-serif;
@@ -43,14 +43,14 @@ header h1 ul {
     text-align: center;
     margin-left: 5px;
 }  
-.sun {
+.sun2 {
     color: #DA5B5B;
 }
-.sat {
+.sat2 {
     color: #415CB9;
 }
 
-#calender-date .day {
+#calender-date2 .day2 {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -65,7 +65,7 @@ header h1 ul {
     margin-top: 5px;
 }
 
-#calender-date .day .date1 {
+#calender-date2 .day2 .date2 {
     border: 2px solid #555A74;
     width: 100%;
     height: 120px;
@@ -75,11 +75,11 @@ header h1 ul {
     padding-top: 7px;
 }
 
-.date1:hover {
+.date2:hover {
     background-color: #e1e8f3;
 }
 
-.other-month {
+.other-month2 {
     color: #000000;
     background-color: #e6e6e6;
 }
