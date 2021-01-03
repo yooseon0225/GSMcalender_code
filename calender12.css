@@ -90,5 +90,11 @@ header h1 ul {
     color: #DA5B5B;
 }
 
-
+.event{
+    width: 275px;
+    margin-top: 5px;
+    border: #1aac56;
+    border-radius: 5px;
+    background-color: #b5f1da;
+}
 
