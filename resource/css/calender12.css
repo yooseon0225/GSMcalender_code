@@ -91,10 +91,14 @@ header h1 ul {
 }
 
 .event{
-    width: 275px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    width: 265px;
     margin-top: 5px;
-    border: #1aac56;
-    border-radius: 5px;
-    background-color: #b5f1da;
+    border: 1px solid #a85959;
+    background-color: #ffe2e2;
+    padding: 2px;
+    text-align: center;
 }
 
