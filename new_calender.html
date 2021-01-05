@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MHDP Full Calendar</title>
+    <link rel="stylesheet" href="./new_calender.css">
+    
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <div class="year-month"></div>
+            <div class="nav">
+                <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                <button class="nav-btn go-today" onclick="goToday()">Today</button>
+                <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+              </div>
+        </div>
+        <div class="main">
+            <div class="days">
+                <div class="day">sun</div>
+                <div class="day">mon</div>
+                <div class="day">thr</div>
+                <div class="day">wed</div>
+                <div class="day">tue</div>
+                <div class="day">fri</div>
+                <div class="day">sat</div>
+            </div>
+            <div class="dates"></div>
+        </div>
+    </div>
+    <script src="new_calender.js"></script>
+</body>
+</html>

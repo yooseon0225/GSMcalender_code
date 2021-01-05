@@ -8,16 +8,107 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Snippet&display=swap');
-            </style>
+        </style>
+
+ 
+        <script language="javascript">
+
+            const date = new Date();
+            const viewYear = date.getFullYear();    
+            const viewMonth=new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" );
+            document.querySelector('.year-month').textContent = (viewMonth[date.getMonth()]+" "+date.getFullYear());
+
+
+
+
+            var today = new Date(); // 오늘 날짜
+            var date = new Date();
+            var month=new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" );
+        
+            function beforem() //이전 달을 today에 값을 저장
+            { 
+                today = new Date(today.getFullYear(), today.getMonth() - 1, today.getDate());
+                build(); //만들기
+            }
+            
+            function nextm()  //다음 달을 today에 저장
+            {
+                today = new Date(today.getFullYear(), today.getMonth() + 1, today.getDate());
+                build();
+            }
+            function build()
+            {
+                var nMonth = new Date(today.getFullYear(), today.getMonth(), 1); //현재달의 첫째 날
+                var lastDate = new Date(today.getFullYear(), today.getMonth() + 1, 0); //현재 달의 마지막 날
+                var tbcal = document.getElementById("calendar"); // 테이블 달력을 만들 테이블
+                var yearmonth = document.getElementById("yearmonth"); //  년도와 월 출력할곳
+                yearmonth.innerHTML = (month[today.getMonth()]) +" "+ today.getFullYear(); //년도와 월 출력
+                
+                if(today.getMonth()+1==12) //  눌렀을 때 월이 넘어가는 곳
+                {
+                    before.alert(document.images.src = "Polygon11.png");
+                    before.innerHTML=(today.getMonth());
+                    next.innerHTML="1";
+                }
+                else if(today.getMonth()+1==1) //  1월 일 때
+                {
+                before.innerHTML="12";
+                next.innerHTML=(today.getMonth()+2);
+                }
+                else //   12월 일 때
+                {
+                    before.innerHTML=(today.getMonth());
+                    next.innerHTML=(today.getMonth()+2);
+                }
+                
+            
+                // 남은 테이블 줄 삭제
+                while (tbcal.rows.length > 2) 
+                {
+                    tbcal.deleteRow(tbcal.rows.length - 1);
+                }
+                var row = null;
+                row = tbcal.insertRow();
+                var cnt = 0;  //날짜 초기화
+        
+                // 1일 시작칸 찾기
+                for (i = 0; i < nMonth.getDay(); i++) 
+                {
+                    cell = row.insertCell(); //삭제 줄 부터
+                    cnt = cnt + 1;
+                }
+        
+                // 달력 출력
+                for (i = 1; i <= lastDate.getDate(); i++) // 1일부터 마지막 일까지
+                { 
+                    cell = row.insertCell();
+                    cell.innerHTML = i;
+                    cnt = cnt + 1;
+                    if (cnt % 7 == 1) {//일요일 계산
+                        cell.innerHTML = "<font color= #DA5B5B>" + i//일요일에 색
+                    }
+                    if (cnt % 7 == 0) { // 1주일이 7일 이므로 토요일 계산
+                        cell.innerHTML = "<font color= #415CB9>" + i//토요일에 색
+                        row = calendar.insertRow();// 줄 추가
+                    }
+
+                    if(today.getFullYear()==date.getFullYear()&&today.getMonth()==date.getMonth()&&i==date.getDate()) //오늘 날짜
+                    {
+                        cell.bgColor = "#bbc1e2"; //오늘날짜배경색
+                    }
+                }
+        
+            }
+        </script>
     </head>
-    <body>
+    <body onload="build();">
         <div id = "all-calender">
             <header>
                 <h1>
                     <ul>
-                        <li><a href="./calender12.html"><img src="./resource/image/calender_icon/Polygon 11.png" alt="화살표왼쪽"></a></li>
+                        <li><a href="./calender12.html"><img src="./resource/image/calender_icon/Polygon11.png" alt="화살표왼쪽"></a></li>
                         <li>January, 1</li>
-                        <li><a href="./calender2.html"><img src="./resource/image/calender_icon/Polygon 12.png" alt="화살표오른쪽"></a></li>
+                        <li><a href="./calender2.html"><img src="./resource/image/calender_icon/Polygon12.png" alt="화살표오른쪽"></a></li>
                     </ul>
                 </h1>
             </header>

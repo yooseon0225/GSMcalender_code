@@ -1,0 +1,28 @@
+#calender {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table{
+    border:1px solid #bdbdbd;
+    text-align:center;
+}
+
+
+
+.cal-week td {
+  text-transform: uppercase; /* 소문자 -> 대문자 */
+  font-family: 'Snippet', sans-serif;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  margin-left: 5px; 
+}
+
+.sun {
+  color: #DA5B5B;
+}
+.sat {
+  color: #415CB9;
+}
