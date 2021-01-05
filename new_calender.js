@@ -56,15 +56,16 @@ const renderCalendar = () => {
     // 데이터 그리기
     document.querySelector('.dates').innerHTML = dates.join('');
     
-    //오늘 날짜 설정
+    
+      // 오늘 날짜 그리기
     const today = new Date();
-    if (viewYear == today.getFullYear && viewMonth == today.getMonth) {
-      for (let date of document.querySelectorAll('this')) {
-        if (+date.innerText == today.getDate()) {
-          date.classList.add('today');
-          break;
+    if (viewMonth == today.getMonth() && viewYear === today.getFullYear()) {
+        for (let date of document.querySelectorAll('this')) {
+            if (+date.innerText === today.getDate()) {
+                date.classList.add('today');
+                break;
+            }
         }
-      }
     }
 
   }
