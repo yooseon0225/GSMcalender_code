@@ -4,19 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MHDP Full Calendar</title>
+    <title>New Calendar</title>
     <link rel="stylesheet" href="./new_calender.css">
-    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Snippet&display=swap');
+    </style>
+
 </head>
 <body>
     <div class="calendar">
         <div class="header">
-            <div class="year-month"></div>
+            
             <div class="nav">
-                <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                <button class="nav-btn go-prev" onclick="prevMonth()"><img src="./resource/image/calender_icon/Polygon11.png" alt="화살표왼쪽"></button>
+            </div>
+
+            <div class="year-month"></div>
+
+            <div class="nav"><button class="nav-btn go-next" onclick="nextMonth()"><img src="./resource/image/calender_icon/Polygon12.png" alt="화살표오른쪽"></button> </div>
+
+            <div class="nav">
                 <button class="nav-btn go-today" onclick="goToday()">Today</button>
-                <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
-              </div>
+            </div>
         </div>
         <div class="main">
             <div class="days">

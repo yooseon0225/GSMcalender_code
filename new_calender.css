@@ -1,36 +1,38 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
     box-sizing: border-box;
-  }
+}
     
-  body {
+body {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-  }
+}
 
-  .calendar {
-    width: 600px;
+.calendar {
+    width: 100%;
     margin: 50px;
-  }
+}
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
   
   .year-month {
-    font-size: 35px;
+    font-size: 60px;
+    font-family: 'Schoolbell', cursive;
   }
   
   .nav {
     display: flex;
-    border: 1px solid #333333;
-    border-radius: 5px;
+    justify-content: space-between;
+    width: 100%;
   }
   
   .nav-btn {
@@ -55,8 +57,13 @@
   }
   
   .day {
+    text-transform: uppercase;
+    font-family: 'Snippet', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
     width: calc(100% / 7);
     text-align: center;
+
   }
   
   .dates {
@@ -75,36 +82,12 @@
     border-left: 1px solid #333333;
   }
 
-  .day:nth-child(7n + 1), .date:nth-child(7n + 1) {
-  color: #D13E3E;
+.day:nth-child(7n + 1), .date:nth-child(7n + 1) {
+  color: #DA5B5B;
 }
 
 .day:nth-child(7n), .date:nth-child(7n) {
-  color: #396EE2;
-}
-
-.other {
-    opacity: .3;
-}
-
-.today {
-    position: relative;
-    color: #FFFFFF;
-}
-
-.today::before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    display: block;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    background-color: #FF0000;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    content: '';
+  color: #415CB9;
 }
 
 .other {
