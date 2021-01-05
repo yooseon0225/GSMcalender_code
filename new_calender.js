@@ -6,10 +6,11 @@ const renderCalendar = () => {
 
     const viewYear = date.getFullYear();  
     //원하는 값 넣기  
-    const viewMonth= new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" );
+    const viewMonth = date.getMonth();
+    const MonthWord = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" );
 
     // 배열[달] = 원하는 값
-    var yearMonth = document.querySelector('.year-month').textContent = (viewMonth[date.getMonth()]+" "+date.getFullYear());
+    var yearMonth = document.querySelector('.year-month').textContent = (MonthWord[date.getMonth()]+" "+date.getFullYear());
 
     // 지난 달의 마지막 날을 구함 (다음 달 처음을 만들기 위함) 
     const prevLast = new Date(date.getFullYear(), date.getMonth(), 0);
@@ -57,7 +58,7 @@ const renderCalendar = () => {
     
     //오늘 날짜 설정
     const today = new Date();
-    if (viewMonth == today.getMonth && viewYear == today.getFullYear) {
+    if (viewYear == today.getFullYear && viewMonth == today.getMonth) {
       for (let date of document.querySelectorAll('this')) {
         if (+date.innerText == today.getDate()) {
           date.classList.add('today');

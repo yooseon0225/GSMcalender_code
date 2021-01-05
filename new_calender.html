@@ -16,17 +16,15 @@
     <div class="calendar">
         <div class="header">
             
+            <div class="go_mainpage"><a href="./calender_mainpage.html"><img src="./resource/image/logo/calender_logo.png" alt=""></a></div>
             <div class="nav">
-                <button class="nav-btn go-prev" onclick="prevMonth()"><img src="./resource/image/calender_icon/Polygon11.png" alt="화살표왼쪽"></button>
+                <button class="go-prev" onclick="prevMonth()"><img src="./resource/image/calender_icon/Polygon11.png" alt="화살표왼쪽"></button>
+
+                <div class="year-month"></div>
+
+                <div class="nav"><button class="go-next" onclick="nextMonth()"><img src="./resource/image/calender_icon/Polygon12.png" alt="화살표오른쪽"></button> </div>      
             </div>
-
-            <div class="year-month"></div>
-
-            <div class="nav"><button class="nav-btn go-next" onclick="nextMonth()"><img src="./resource/image/calender_icon/Polygon12.png" alt="화살표오른쪽"></button> </div>
-
-            <div class="nav">
-                <button class="nav-btn go-today" onclick="goToday()">Today</button>
-            </div>
+            <button class="nav-btn go-today" onclick="goToday()">Today</button>
         </div>
         <div class="main">
             <div class="days">
