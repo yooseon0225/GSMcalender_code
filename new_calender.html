@@ -24,7 +24,14 @@
 
                 <div><button class="go-next" onclick="nextMonth()"><img src="./resource/image/calender_icon/Polygon12.png" alt="화살표오른쪽"></button> </div>      
             </div>
-            <button class="nav-btn go-today" onclick="goToday()">Today</button>
+
+            <ul>
+                <li><button onclick="goToday()">Today</button></li>
+                <li><div><button onclick="javascript:addSchedule();">Edit Schedule</button></div></li>
+            </ul>
+
+
+            
         </div>
         <div class="main">
             <div class="days">
@@ -39,6 +46,17 @@
             <div class="dates"></div>
         </div>
     </div>
+
+    <div class="box box-succes" style="width:500px; display: none; background-color: white;" id="winAlert">
+        <div class="box-header with-boder" style="background-color: white; padding-left: 15px;">
+            <h3 class="box-title" style="background-color: white;" id="alert_subject"></h3>
+        </div> <!-- box-header -->  
+        <div class="box-body" id="alert_contents" style="font-size: 15px; background-color: white;">
+        </div> <!-- box-body --> 
+    </div> <!-- box --> 
+
+
+
     <script src="./resource/js/new_calender.js"></script>
 </body>
 </html>

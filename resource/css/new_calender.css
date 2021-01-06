@@ -45,21 +45,17 @@ body {
     bottom: 15px;
 }
 
-.year-month {
-    font-size: 60px;
-    font-family: "Schoolbell", cursive;
-    width: 800px;
-    text-align: center;
-  }
+
   
 .year-month {
+    text-align: center;
     font-size: 70px;
     font-family: 'Schoolbell', cursive;
     font-weight: bold;
     text-align: center;
     position: relative;
     bottom: 20px;
-
+    left: 10px;
     width: 500px;
 }
   
@@ -68,9 +64,9 @@ body {
     display: flex;
     justify-content: space-between;
     float: left;
-    width: 44%;
+    width: 40%;
     position: relative;
-    right: 35px; 
+    left: 60px;
     top: 15px;
 }
 
@@ -83,9 +79,20 @@ body {
     /* 클릭시 나타나는 border 삭제 */
 }
 
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin-right: 55px;
+}
 
-  
-.nav-btn {
+ul li {
+    list-style: none;
+}
+
+
+ul li button{
+
     padding: 5px;
     color: #42465f;
     border: 3px solid #42465f;
@@ -97,7 +104,27 @@ body {
     background-color: transparent; 
     position: relative;
     bottom: 10px;
-    right: 300px;
+}
+
+  
+
+.addSchedule {
+    float: left;
+    position: relative;
+    bottom: 10px;
+    right: 15px;
+}
+
+.addSchedule button {
+    color: #42465f;
+    font-family: 'Schoolbell', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: transparent;
+    border: 3px solid #42465f;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
 }
 
 
@@ -172,3 +199,7 @@ body {
     transform: translate(-50%, -50%);
     content: '';
 }
+
+
+
+
