@@ -24,6 +24,7 @@
                     </p>
                 </div>
                 <script src="./resource/js/signup_img.js"></script>
+                
                 <!-- html과 js 연결 -->
             </div>
             <div class="signup">             
@@ -75,10 +76,22 @@
                     </fieldset>
                     <button class="signup-button" name="first-start" type="submit">가입하기</button> 
                     <div class="next-login"><a href="./calender_login.html">계정이 이미 있어요</a></div>                
-                </form>
-    
-                
+                </form>    
             </div>
         </div>
+        <script>
+            const signupForm = document.querySelector("#signup-form");
+            const signupButton = document.querySelector("#signup-button");
+            const password = document.querySelector("#password");
+            const passwordCheck = document.querySelector("#password-check");
+            signupButton.addEventListener("click", function(e) {
+                if(password.value&& password.value === passwordCheck.value){
+                    
+                signupForm.submit();
+                }else{
+                    alert("비밀번호가 서로 일치하지 않습니다");
+                }
+            });
+        </script>
     </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>::::</title>
+ 
+<script type="text/javascript">
+window.onload = function(){
+    var dt = new Date();
+    var Year = dt.getFullYear();        
+    var Month = "" + (dt.getMonth()+1);
+    var Day = "" + dt.getDate();            
+    
+    if(Month.length < 2) Month = "0" + Month;
+    if(Day.length < 2) Day = "0" + Day;
+    
+    var Today = Year.toString() ;
+    // +"-"+ Month +"-"+ Day
+    
+    document.getElementById("TODAY").value = Today;
+} 
+</script>
+</head>
+<body>
+현재?? : <input type="text" id="TODAY" value="">
+</body>
+</html>
