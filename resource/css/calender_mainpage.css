@@ -29,6 +29,11 @@
 .logo img{
     width: 135px;
     height: 125px;
+    border: 4px solid #555A74;
+    border-radius: 15px;
+    position: relative;
+    top:7px;
+    left: 12px;
 }
 
 .user img {

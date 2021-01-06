@@ -3,8 +3,12 @@
     margin-left: 40px;
     width: 135px;
     height: 125px;
-    position: relative;
     /* top: 55px; */
+    border: 4px solid #555A74;
+    border-radius: 15px;
+    position: relative;
+    top:7px;
+    left: 12px;
     
 }
 #all-calener-signup {

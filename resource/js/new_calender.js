@@ -55,20 +55,20 @@ const renderCalendar = () => {
     
     // 데이터 그리기
     document.querySelector('.dates').innerHTML = dates.join('');
+
     
-    
-      // 오늘 날짜 그리기
+    // 오늘 날짜 그리기
     const today = new Date();
-    if (viewMonth == today.getMonth() && viewYear === today.getFullYear()) {
+    if (viewMonth == today.getMonth && viewYear == today.getFullYear) {
         for (let date of document.querySelectorAll('this')) {
-            if (+date.innerText === today.getDate()) {
+            if (+date.innerText == today.getDate()) {
                 date.classList.add('today');
                 break;
             }
         }
     }
-
-  }
+    
+}
   
 renderCalendar();
 

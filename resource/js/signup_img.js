@@ -11,7 +11,7 @@ function changeGcImg(idx){ //idx를 가진 ChangeGcImg 함수생성
     var imgTag = document.getElementById("GcImg");
     // getElementById : 주어진 문자열의 속성을 가진 요소를 찾고, 이를 나타내는 Element 객체로 반환
     //id 없는 요소에 접근하는 경우 : Document.querySelector();를 사용
-    imgTag.setAttribute("src", "images/img0"+num+".jpg");
+    imgTag.setAttribute("src", "resource/image/gc_character/img0"+num+".jpg");
     // GcImg라는 id를 가진 값의 src 속성을 "images/img0"+num+".jpg"로 변경
     // setAttribute : id 값의 속성을 변경
     // setAttribute ("속성", "변경값");
