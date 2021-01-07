@@ -58,7 +58,7 @@ function addSchedule()
     htmlsContents += "<div style='width:100%; height:30px'><div style='width:30%;float:left; padding-top:10px; padding-left:50px'>일정 명칭</div><div style='width:60%;  padding-top:10px; float:right'><input type='text' id='calendar_title' value=''></div></div>";
     htmlsContents += "<div style='width:100%; height:30px'><div style='width:30%;float:left; padding-top : 6px; padding-left:50px'>시작 날짜</div><div style='width:60%; padding-top : 6px; float:right'><input type='text' id='calendar_start_date' value='' style='width:80px'></div></div>";
     htmlsContents += "<div style='width:100%; height:30px'><div style='width:30%;float:left; padding-top:3px; padding-left:50px'>마침 날짜</div><div style='width:60%; padding-top:3px; float:right'><input type='text' id='calendar_end_date' value='' style='width:80px'></div></div>";
-    htmlsContents += "<div style='width:100%; text-align:center; height:30px; margin-bottom:15px; margin-top:10px'><button style='background-color:white; width:100px; height: 30px; font-size: 15px; font-weight:bold; border:2px solid #2e3250; border-radius:5px; outline:none; color:#2e3250;'  onclick=\"javascript:saveSchedule();\">저장하기</button></div>";
+    htmlsContents += "<div style='width:100%; text-align:center; height:30px; margin-bottom:15px; margin-top:10px'><button style='background-color:white; width:100px; height: 30px; font-size: 15px; font-weight:bold; border:2px solid #2e3250; border-radius:5px; outline:none; color:#2e3250'  onclick=\"javascript:saveSchedule();\"> 저장하기</button></div>";
     openPopup("일정 등록",htmlsContents, 400);
 }
 

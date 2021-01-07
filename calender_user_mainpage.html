@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GSM Calender main</title>
-        <link rel="stylesheet" href="./resource/css/calender_mainpage.css">
+        <link rel="stylesheet" href="./resource/css/calender_user_mainpage.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
@@ -19,33 +19,45 @@
         <header>
             <div class="signup">
                 <ul>
-                    <li class="text"><a href="./calender_login.html">login</a></li>
-                    <li class="text"><a href="./calender_signup.html">signup</a></li>
+                    <li class="text"><a href="./mypage.html">mypage</a></li>
+                    <li class="text"><a href="./calender_signup.html">logout</a></li>
                 </ul>
             </div>
             <div id="menu">
+
+
+
+
                 <ul>
-                    <li class="logo"><a href="./calender_mainpage.html"><img src="./resource/image/logo/calender_logo.png" alt="로고"></a></li>
+                    <li class="logo"><a href="./calender_user_mainpage.html"><img src="./resource/image/logo/calender_logo.png" alt="로고"></a></li>
                     <li class="textmenu"><a href="http://gsm.gen.hs.kr/main/main.php">GSM page</a> </li>
                     <li class="textmenu"><a href="./new_calender.html">Calender</a></li>
-                    <li class="user"><img src="./resource/css/main_icon_img/user.png" alt="비로그인사용자"></li>
-                    <li class="textmenu textsearch">
-                        <form action="search">
-                            <ul>
-                                <li><input class="keyword" type="text" name="search" maxlength="255" value="" autocomplete="off" placeholder="검색어 입력"></li>
-                                <li><button class="button-img" type="submit" name="click" value=""><img src="./resource/css/main_icon_img/serch_icon.png" alt="검색아이콘"><!-- 버튼을 클릭시 폼 데이터 제출 -->
-                                    <i class="fa-search"></i> <!-- 글씨를 기울림 -->
-                                </button></li>
-                            </ul>
-                            
+                    <li class="user"><img src="./resource/image/gc_character/img01.jpg" alt="비로그인사용자"></li>
+                    <li>
+                        <form class="search" method=get action="http://www.google.co.kr/search" target="_blank" autocomplete="on">      
+                            <table color="#FFFFFF">     
+                                <tr>       
+                                    <td>           
+                                        <input class="keyword1" type=text name=q size=25 maxlength=255 value="" placeholder="검색어 입력"/> <!-- 구글 검색 입력 창 -->   
+                                    </td>  
+                                    <td>
+                                        <button class="button-img" type=submit name=btnG value="">
+                                            <img src="./resource/css/main_icon_img/serch_icon.png" alt="검색아이콘">
+                                        </button>  
+                                    </td>   
+                                </tr>   
+                            </table> 
                         </form>
-                    </li> <!-- textsearch -->              
+                    </li>
+                    
+    
                 </ul>
-            </div> <!-- menu -->            
+            </div> <!-- menu -->   
+         
         </header>
 
         <div id="small-calender">
-            <h1>January, 1</h1>
+            <h1>January 2021</h1>
 
             <div class="small-calender-date">
                 <ul class="small-week">
@@ -71,7 +83,11 @@
                     <li class="small-date">4</li>
                     <li class="small-date">5</li>
                     <li class="small-date">6</li>
-                    <li class="small-date">7</li>
+                    <li class="small-date date_today">7
+                        <div class="last">
+                            gsm 페스티벌 마감일
+                        </div>
+                    </li>
                     <li class="small-date">8</li>
                     <li class="small-date sat">9</li>
                 </ul>

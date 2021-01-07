@@ -10,11 +10,18 @@
     left: 12px;
 }
 
+.useruser{
+    width: 135px;
+    height: 135px;
+    position: relative;
+    bottom: 30px;
+    left: 130px;
+}
+
 .login-form-tag {
     display: flex;
     justify-content: center; /* 가로에서 가운데 배치 */   
-    align-items: center; /* 세로에서 가운데 배치  */
-    margin-top: 210px;
+    margin-top: 80px;
 }
 
 .login-field {

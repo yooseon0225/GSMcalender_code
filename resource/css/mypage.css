@@ -1,0 +1,137 @@
+.logo img{
+    margin-top: 26px;
+    margin-left: 40px;
+    width: 135px;
+    height: 135px;
+    border: 4px solid #555A74;
+    border-radius: 15px;
+    position: relative;
+    top:5px;
+    left: 12px;
+    
+}
+#all-calener-signup {
+    position: relative;
+    /* 원래 위치와는 상관 없이 위치 지정 */
+    bottom: 55px;
+}
+
+.gc_img_set {
+    border: 3px solid #555A74;
+    border-radius: 10px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    
+}
+.img_set {
+    text-align: center;
+}
+
+.gc_user_img {
+    width: 130px;
+    height: 130px;
+}
+
+.img_set button {
+    background-color: #FFFFFF;
+    border: none;
+    align-items: center;
+}
+
+.img_set button img {
+    width: 35px;
+    height: 35px;
+}
+
+.img_set button:focus {
+    outline: none;
+    /* 클릭시 생기는 테두리 없애기 ex) input:focus{outline:none;}*/
+}
+
+
+.signup {
+    display: flex;
+    justify-content: center; /* 가로에서 가운데 배치 */   
+    align-items: center; /* 세로에서 가운데 배치  */
+}
+
+.signup-fieldset{
+    width: 370px;
+    border: 3px solid #555A74;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.signup legend {
+    font-size: 28px;
+    text-align: center;
+    color: #555A74;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.signup-id-input {
+    width: 200px;
+    height: 42px;
+    background-color: #DBE2ED;
+    border-radius: 5px;
+    border: 2px solid #DBE2ED;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    padding-left: 2.5%;
+    margin: 2px;
+}
+
+.overlap-test {
+    margin-left: 15px;
+    background-color: #FFFFFF;
+    border: 2px solid #555A74;
+    border-radius: 5px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+    color: #555A74;
+}
+
+.signup-input {
+    width: 275px;
+    height: 42px;
+    background-color: #DBE2ED;
+    border-radius: 5px;
+    border: 2px solid #DBE2ED;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    padding-left: 2.5%;
+    margin: 2px;
+}
+
+.signup-fieldset p {
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
+    color: #555A74;
+    font-size: 20px;
+    margin-left: 3.5px;
+}
+.signup-button {
+    width: 128px;
+    height: 42px;
+    background-color: #FFFFFF;
+    border: 3px solid #555A74;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-left: 135px;
+    margin-top: 15px;
+    color: #555A74;
+    padding-top: 4px;
+}
+.next-login {
+    margin-top: 6px;
+    margin-left: 134px;
+}
+.next-login a{
+    text-decoration: none;
+    color: #a5a5a5;
+    font-size: 14.5px;
+}

@@ -15,6 +15,7 @@
     /* top: 55px; */
     border: 4px solid #555A74;
     border-radius: 15px;
+    cursor: pointer;
 }
     
 body {
@@ -77,6 +78,7 @@ body {
     height: 30px;
     outline: none;
     /* 클릭시 나타나는 border 삭제 */
+    cursor: pointer;
 }
 
 ul{
@@ -183,6 +185,8 @@ ul li button{
     position: relative;
     color: #FFFFFF;
     background-color: yellow;
+    background-color: #ff8585;
+    border-radius: 50%;
 }
   
 .today::before {
@@ -220,10 +224,10 @@ color: red;
 }
 
 #loading {
-display: none;
-position: absolute;
-top: 10px;
-right: 10px;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 h3 {

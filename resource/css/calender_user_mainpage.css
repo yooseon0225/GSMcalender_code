@@ -2,10 +2,10 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 8%;
+    width: 8.5%;
     /* 부모의 값을 기준으로 이동 (fixed는 고정) */
     position: absolute; 
-    right: 25px;
+    right: 30px;
     top: 3px;
 
 }
@@ -36,9 +36,11 @@
 }
 
 .user img {
-    width: 125px;
-    height: 125px;
-
+    width: 135px;
+    height: 135px;
+    border: 4px solid #555A74;
+    border-radius: 50%;
+    padding: 3px;
 }
 
 #menu ul{
@@ -67,9 +69,8 @@ a{
 }
 
 .user {
-
     position: relative;
-    left: 6px;
+    right: 20px;
 }
 
 .textsearch {
@@ -83,6 +84,8 @@ a{
     margin-left: 15px;
     background-color: #ffffff;
     border: #FFFFFF;
+    cursor: pointer;
+    outline: non;
 }
 
 .button-img img {
@@ -103,8 +106,23 @@ a{
     padding-left: 3%;
 }
 
-.keyword::placeholder {
+.keyword1 {
+    width: 360px;
+    height: 48px;
+    border: 3px solid #464b6b;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Do Hyeon', sans-serif;
+    padding-left: 3%;
+}
+
+.keyword1::placeholder {
     color: #b8b8b8;
+}
+
+.search{
+    position: relative;
+    top: 70px;
 }
 
 #small-calender h1 {
@@ -187,4 +205,18 @@ a{
 .small-other {
 
     opacity: .4;
+}
+
+
+.date_today {
+    background-color: rgb(255, 252, 239);
+}
+
+
+.last {
+    background-color: rgb(255, 211, 129);
+    font-size: 15px;
+    padding-left: 15px;
+    margin-top: 15px;
+    height: 20px;
 }
