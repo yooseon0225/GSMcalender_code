@@ -15,12 +15,26 @@ new Search();
 ##### 검색기능을 활용하여 일정을 쉽게 찾을 수 있습니다.
 * * *
 
+
+```
+var : 재선언 가능 
+let, const 변수 재설정 불가능
+let : 재할당 가능
+const : 재선언, 재할당 불가능
+```
+
+#### var, let, const의 차이점
+
+* * *
+
 ```
 let date = new Date();
 
 ```
 
 #### js Date() 함수를 통하여 달력 데이터를 가지고 왔습니다.
+
+* * *
 
 ```
 const MonthWord = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" );
@@ -30,11 +44,6 @@ const MonthWord = new Array("January", "February", "March", "April", "May", "Jun
 
 
 
-```
-var : 재선언 가능 
-let, const 변수 재설정 불가능
-let : 재할당 가능
-const : 재선언, 재할당 불가능
-```
+
 
 
