@@ -30,3 +30,11 @@ const MonthWord = new Array("January", "February", "March", "April", "May", "Jun
 
 
 
+```
+var : 재선언 가능 
+let, const 변수 재설정 불가능
+let : 재할당 가능
+const : 재선언, 재할당 불가능
+```
+
+
